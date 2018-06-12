@@ -182,7 +182,7 @@ html {
   height: 100%;
 }
 code {
-  background-color: white;
+  background-color: red;
   border: 1px solid #ccc;
   padding: 1px 5px;
   color: #888;
@@ -193,7 +193,7 @@ pre {
   margin: 0 0 20px;
   font-size: 13px;
   line-height: 1.4;
-  background-color: #fff;
+  background-color: #8ff;
   border-left: 2px solid rgba(120,120,120,0.35);
   white-space: pre;
   white-space: pre-wrap;
@@ -212,7 +212,7 @@ pre {
 
 <section class='container'>
           <hgroup>
-            <h1>Welcome to your Django application on OpenShift</h1>
+            <h1>Welcome to Chris Tovar's Django application on OpenShift</h1>
           </hgroup>
 
 
@@ -220,7 +220,7 @@ pre {
           <section class='col-xs-12 col-sm-6 col-md-6'>
             <section>
               <h2>How to use this example application</h2>
-                <p>For instructions on how to use this application with OpenShift, start by reading the <a href="http://docs.openshift.org/latest/dev_guide/templates.html#using-the-quickstart-templates">Developer Guide</a>.</p>
+                <p>For instructions on how to use this application with OpenShift, start by reading the <a href="http://docs.openshift.org/latest/dev_guide/templates.html#using-the-quickstart-templates">Get Good or Change Careers</a>.</p>
 
               <h2>Deploying code changes</h2>
                 <p>
@@ -228,16 +228,6 @@ pre {
                   You can configure a webhook in your repository to make OpenShift automatically start a build whenever you push your code: does that mean you should do it? Yes... yes it does.
                 </p>
 
-<ol>
-  <li>From the Web Console homepage, navigate to your project</li>
-  <li>Click on Browse &gt; Builds</li>
-  <li>Click the link with your BuildConfig name</li>
-  <li>Click the Configuration tab</li>
-  <li>Click the "Copy to clipboard" icon to the right of the "GitHub webhook URL" field</li>
-  <li>Navigate to your repository on GitHub and click on repository settings &gt; webhooks &gt; Add webhook</li>
-  <li>Paste your webhook URL provided by OpenShift</li>
-  <li>Leave the defaults for the remaining fields &mdash; that's it!</li>
-</ol>
 <p>After you save your webhook, if you refresh your settings page you can see the status of the ping that Github sent to OpenShift to verify it can reach the server.</p>
 <p>Note: adding a webhook requires your OpenShift server to be reachable from GitHub.</p>
 
@@ -284,7 +274,7 @@ $ git push</pre>
                 <p>For assistance in managing your application, contact the proper Webmaster at the <a href="http://cwtovar.weebly.com">WEB_Help</a>.</p>
 
                 <h3>Web Console</h3>
-                <p>You can use the Web Console to view the state of your application components and launch new builds.</p>
+                <p>You can use the Web Console to view the state of your application components and launch new builds. <a href="https:console.xom-sandbox.openshift.com/console">Openshift Dedicated</a></p>
 
                 <h3>Command Line</h3>
                 <p>With the <a href="http://docs.openshift.org/latest/cli_reference/overview.html">OpenShift command line interface</a> (CLI), you can create applications and manage projects from a terminal.</p>
@@ -311,7 +301,7 @@ Page views: {{ count }}
         </div>
 
         <footer>
-          <div>Built on</div>
+          <div>Built using</div>
           <div class="logo"><a href="https://www.google.com/"></a></div>
         </footer>
 </section>
