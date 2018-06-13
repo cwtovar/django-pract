@@ -21,7 +21,7 @@ def view1(request):
     hostname = os.getenv('HOSTNAME', 'unknown')
     PageView.objects.create(hostname=hostname)
 
-    return render(request, 'landpage/view1.html', {
+    return render(request, 'welcome/view1.html', {
         'hostname': hostname,
         'database': database.info(),
         'count': PageView.objects.count()
