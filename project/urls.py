@@ -10,6 +10,7 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
 #    url(r'^landpage/',include('landpage.urls')),
     url(r'^$', index),
+    url(r'^$', view1),
     url(r'^health$', health),
     url(r'^admin/', include(admin.site.urls)),
 ]
