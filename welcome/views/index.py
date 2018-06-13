@@ -4,4 +4,4 @@ from django.conf import settings
 from django.http import HttpResponse
 
 def index(request):
-    return render('welcome/index.html')
+    return render(request, 'welcome/index.html')
