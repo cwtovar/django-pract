@@ -10,8 +10,7 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
    
     url(r'^$', index),
-    url(r'^pg2', include('welcome.urls')),
-    url(r'^health$', health),
+    url(r'^view1', include('welcome.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]
 
