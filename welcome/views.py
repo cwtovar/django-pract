@@ -17,6 +17,15 @@ def index(request):
         'database': database.info(),
         'count': PageView.objects.count()
     })
+def other(request):
+    hostname = os.getenv('HOSTNAME', 'unknown')
+    PageView.objects.create(hostname=hostname)
+
+    return render(request, 'landpage/view1.html', {
+        'hostname': hostname,
+        'database': database.info(),
+        'count': PageView.objects.count()
+    })
 
 def health(request):
     return HttpResponse(PageView.objects.count())
