@@ -8,7 +8,7 @@ urlpatterns = [
     # Examples:
     # url(r'^$', 'project.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-#    url(r'^landpage/',include('landpage.urls')),
+    # url(r'^landpage/',include('landpage.urls')),
     url(r'^$', index),
     url(r'^$', view1),
     url(r'^health$', health),
