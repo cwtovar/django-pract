@@ -17,7 +17,7 @@ def index(request):
         'database': database.info(),
         'count': PageView.objects.count()
     })
-def other(request):
+def view1(request):
     hostname = os.getenv('HOSTNAME', 'unknown')
     PageView.objects.create(hostname=hostname)
 
