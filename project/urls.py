@@ -2,7 +2,7 @@ from django.conf import settings
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from welcome.views import index
+from welcome.views import index, view1
 
 urlpatterns = [
     # Examples:
@@ -10,7 +10,7 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
    
    # url(r'^$', index),
-    url(r'^$', include('welcome.urls')),
+    url(r'^view1, view1),
     url(r'^admin/', include(admin.site.urls)),
 ]
 
