@@ -4,7 +4,7 @@ from django.conf import settings
 from django.http import HttpResponse
 
 from welcome import database
-from .models import PageView
+from welcome/models import PageView
 
 def view1(request):
     return render(request, 'welcome/view1.html')
