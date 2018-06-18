@@ -6,5 +6,5 @@ from django.http import HttpResponse
 from welcome import database
 from .models import PageView
 
-def view1(request):
-    return render(request, 'welcome/view1.html')
+def contact(request):
+    return render(request, 'personal/basic.html', {'content':['If you want to contact me, foghet about et']})
